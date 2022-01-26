@@ -1,0 +1,8 @@
+{
+  "name": "*USERVISIBLENAME*",
+  "app_id": "org.tkcoin.*BUNDLENAME*",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

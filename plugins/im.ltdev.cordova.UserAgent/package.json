@@ -1,0 +1,56 @@
+{
+  "_from": "git+https://github.com/danielsogl/cordova-plugin-useragent.git",
+  "_id": "cordova-plugin-useragent@1.0.6",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-useragent",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/danielsogl/cordova-plugin-useragent.git",
+    "rawSpec": "https://github.com/danielsogl/cordova-plugin-useragent.git",
+    "saveSpec": "git+https://github.com/danielsogl/cordova-plugin-useragent.git",
+    "fetchSpec": "https://github.com/danielsogl/cordova-plugin-useragent.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/danielsogl/cordova-plugin-useragent.git#5c745edd1570bed22c51d16fcc9e1203d45e104a",
+  "_spec": "https://github.com/danielsogl/cordova-plugin-useragent.git",
+  "_where": "/Users/santiago/Documents/BTC/EducoinGenerator/wallet",
+  "author": {
+    "name": "Daniel Sogl"
+  },
+  "bugs": {
+    "url": "https://github.com/danielsogl/cordova-plugin-useragent/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "com.danielsogl.cordova.useragent",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Allows you to change your User-Agent for HTTP requests.",
+  "homepage": "https://github.com/danielsogl/cordova-plugin-useragent#readme",
+  "keywords": [
+    "user",
+    "agent",
+    "useragent",
+    "user-agent",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-useragent",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielsogl/cordova-plugin-useragent.git"
+  },
+  "version": "1.0.6"
+}

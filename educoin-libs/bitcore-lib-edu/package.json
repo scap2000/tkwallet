@@ -1,0 +1,87 @@
+{
+  "_args": [
+    [
+      "bitcore-lib-edu@8.25.7",
+      "/Users/santiago/Documents/BTC/EducoinGenerator/wallet"
+    ]
+  ],
+  "_from": "bitcore-lib-edu@8.25.7",
+  "_id": "bitcore-lib-edu@8.25.7",
+  "_inBundle": false,
+  "_integrity": "sha512-eECXfaXkc6LSK3ZjOAsEvKXMMpbmWFJh+SaFFgWkyOs1py6LtXoUbjopDAuTyU4d1uIyGpUkZ+HHji+5QcXn/A==",
+  "_location": "/bitcore-lib-edu",
+  "_phantomChildren": {
+    "base-x": "3.0.8"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "bitcore-lib-edu@8.25.7",
+    "name": "bitcore-lib-edu",
+    "escapedName": "bitcore-lib-edu",
+    "rawSpec": "8.25.7",
+    "saveSpec": null,
+    "fetchSpec": "8.25.7"
+  },
+  "_requiredBy": [
+    "/crypto-wallet-core"
+  ],
+  "_resolved": "https://registry.npmjs.org/bitcore-lib-edu/-/bitcore-lib-edu-8.25.7.tgz",
+  "_spec": "8.25.7",
+  "_where": "/Users/santiago/Documents/BTC/EducoinGenerator/wallet",
+  "author": {
+    "name": "TKCoin",
+    "email": "dev@tkcoin.org"
+  },
+  "browser": {
+    "request": "browser-request"
+  },
+  "dependencies": {
+    "bech32": "=1.1.3",
+    "bn.js": "=4.11.8",
+    "bs58": "^4.0.1",
+    "buffer-compare": "=1.1.1",
+    "elliptic": "^6.5.3",
+    "inherits": "=2.0.1",
+    "lodash": "^4.17.20"
+  },
+  "description": "A pure and powerful JavaScript Bitcoin library.",
+  "devDependencies": {
+    "bitcore-build": "^8.25.7",
+    "brfs": "^2.0.1",
+    "chai": "^4.2.0",
+    "gulp": "^4.0.0",
+    "sinon": "^7.1.1"
+  },
+  "keywords": [
+    "educoin",
+    "transaction",
+    "address",
+    "p2p",
+    "ecies",
+    "cryptocurrency",
+    "blockchain",
+    "payment",
+    "bip21",
+    "bip32",
+    "bip37",
+    "bip69",
+    "bip70",
+    "multisig"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "bitcore-lib-edu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tkcoin/bitcore/tree/master/packages/bitcore-lib-edu"
+  },
+  "scripts": {
+    "build": "gulp",
+    "coverage": "gulp coverage",
+    "pub": "npm run build && npm publish",
+    "test": "gulp --tasks && gulp test",
+    "test:ci": "npm run test"
+  },
+  "version": "8.25.7"
+}

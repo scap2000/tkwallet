@@ -1,0 +1,86 @@
+<ion-header no-border>
+  <ion-navbar hideBackButton transparent></ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+  <ion-slides (ionSlideDidChange)="slideChanged()" #featureEducationSlides [pager]="!featureEducationSlides.isEnd()" class="onboarding-slides">
+    <!-- TODO FIX REMOVE UNNEEDED SLIDES
+      <ion-slide *ngIf="appName !== 'Copay'">
+      <ion-content>
+        <div class="slide-info">
+          <div class="img-container">
+            <img src="assets/img/onboarding/feature-education-1.svg" />
+          </div>
+          <div class="info">
+            <h3 class="title" translate>Turn crypto into dollars using our BitPay Card.</h3>
+            <div class="text" translate>
+              Instantly reload your card balance with no conversion fees. Powered by our competitive exchange rates.
+              <div class="note" translate>
+                *Currently available in the USA. More countries coming soon.
+              </div>
+            </div>
+          </div>
+        </div>
+      </ion-content>
+    </ion-slide>
+    -->
+    <ion-slide *ngIf="appName !== 'Copay'">
+      <ion-content>
+        <div class="slide-info">
+          <div class="img-container">
+            <img class="tour-2" src="assets/img/onboarding/feature-education-2.svg" />
+          </div>
+          <div class="info">
+            <h3 class="title" translate>EDUCoin, the educational cryptocurrency</h3>
+            <div class="text" translate>
+              You can use EDUCoin for free to learn about cryptocurrencies, without jeopardizing your money.
+            </div>
+          </div>
+        </div>
+      </ion-content>
+    </ion-slide>
+    <ion-slide>
+      <ion-content>
+        <div class="slide-info">
+          <div class="img-container">
+            <img src="assets/img/onboarding/feature-education-3.svg" />
+          </div>
+          <div class="info">
+            <h3 class="title" translate>No-limit learning</h3>
+            <div class="text" translate>
+              Teach your family and friends, send and receive EDUCoin with no costs, try and test without limits.
+            </div>
+          </div>
+        </div>
+      </ion-content>
+    </ion-slide>
+    <ion-slide class="key-creation">
+      <ion-content>
+        <div class="slide-info">
+          <div class="img-container">
+            <img class="tour-1" src="assets/img/onboarding-tour1.svg" />
+          </div>
+          <div class="info">
+            <h3 class="title" translate>Security, trust, ease, speed, decentralization</h3>
+            <div class="text" translate>Evolution: all this in the palm of your hand, on an educational network and a simple and easy-to-use mobile application.</div>
+          </div>
+        </div>
+      </ion-content>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+<ion-footer no-border *ngIf="!isCordova || featureEducationSlides.isEnd()">
+  <ion-toolbar *ngIf="!featureEducationSlides.isEnd() && !isCordova">
+    <button ion-button class="button-standard" (click)="featureEducationSlides.slideNext()">
+      {{'Continue' | translate}}
+    </button>
+  </ion-toolbar>
+  <ion-toolbar *ngIf="featureEducationSlides.isEnd()">
+    <button ion-button class="button-standard no-margin-bottom" (click)="goToNextPage('SelectCurrencyPage')">
+      {{'Start' | translate}}
+    </button>
+    <button ion-button clear color="primary" class="button-standard" (click)="goToNextPage('ImportWalletPage')">
+      {{'Import from backup' | translate}}
+    </button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,10 @@
+{
+  "name": "TKCoin",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "//-": "Changes to this file will be overwritten.",
+  "//--": "Modify it's template in the app-template directory.",
+  "id": "org.tkcoin.wallet"
+}

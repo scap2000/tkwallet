@@ -1,0 +1,52 @@
+<wide-header-page title="{{'Card Settings'|translate}}">
+  <div page-content>
+    <ion-list class="bp-list" [ngClass]="{'top-padding': !tkcoinCard}">
+      <ng-container *ngIf="!tkcoinCard">
+        <ion-item>
+          <ion-label>{{'Show' | translate}}</ion-label>
+          <ion-toggle [(ngModel)]="showAtHome" (ionChange)="integrationChange()"></ion-toggle>
+        </ion-item>
+        <button ion-item class="pairButton" (click)="connectTKCoinCard()">
+          <span class="main-label">{{'Pair My BitPay Card' | translate}}</span>
+        </button>
+      </ng-container>
+
+
+
+      <div *ngIf="tkcoinCard">
+        <ion-item>
+          <ion-icon item-start>
+            <img width="60" src="assets/img/tkcoin-card/tkcoin-card-visa.svg" />
+          </ion-icon>
+          <h2>TKCoin Visa&reg; Card</h2>
+          <p *ngIf="tkcoinCard.email">{{tkcoinCard.email}}</p>
+        </ion-item>
+        <ion-item>
+          {{ 'Last four digits' | translate}}
+          <ion-note item-end>
+            {{tkcoinCard.lastFourDigits}}
+          </ion-note>
+        </ion-item>
+
+        <button ion-item class="with-label no-border" (click)="unlinkCard(tkcoinCard)">
+          <ion-label>{{'Unlink card' | translate}}</ion-label>
+        </button>
+        <label-tip type="warn" header="no-header">
+          <div label-tip-body>
+            <div translate>Unlink the card will remove it from this device.</div>
+          </div>
+        </label-tip>
+
+        <button ion-item class="with-label no-border" (click)="unlinkAccount(tkcoinCard)">
+          <ion-label>{{'Unlink account' | translate}}</ion-label>
+        </button>
+        <label-tip type="warn" header="no-header">
+          <div label-tip-body>
+            <div translate>Unlink the account will remove it and all associated cards from this device.</div>
+          </div>
+        </label-tip>
+      </div>
+
+    </ion-list>
+  </div>
+</wide-header-page>

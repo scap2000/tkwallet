@@ -1,0 +1,57 @@
+<wide-header-page title="{{title}}">
+  <div page-content>
+    <ion-list class="bp-list">
+      <ion-item-divider (tap)="countReleaseHeaderTaps($event)">{{'Release information'| translate}}</ion-item-divider>
+      <button ion-item (click)="wipeTKCoinAccounts()">
+        <ion-icon class="item-img icon-settings" name="ios-download-outline" item-start></ion-icon>
+        <span class="main-label" translate>Version</span>
+        <ion-note item-end>
+          v{{version}}
+        </ion-note>
+      </button>
+
+      <div class="section-header">
+        <h3 class="title" translate>TKCoin Wallet is a fork from the original Bitpay Wallet</h3>
+      </div>
+      <div class="description-container">
+        <div>
+          <div class="text" translate>
+            TKCoin Wallet was developed by forking the original BitPay Wallet source code and it has several limitations. The BitPay and Bitcore developers made an amazing job with the entire Bitcore suite and they released it under the MIT license. Thanks to all of them! Hopefully in the future they will include EDUCoin and TKCoin cryptocurrencies in the official Bitpay Wallet so you can access all the spectacular features they offer on the full application. Thanks a lot to all BitPay and Bitcore teams!
+          </div>
+          <ion-row justify-content-center class="background-button-content">
+            <div class="background-content">
+              <button ion-button clear (click)="openBitPayWalletHome()">
+                {{'Go to site' | translate}}
+              </button>
+            </div>
+          </ion-row>
+        </div>
+      </div>
+      <!-- TODO FIX
+      <button ion-item>
+        <ion-icon class="item-img icon-settings" name="logo-github" item-start></ion-icon>
+        <span class="main-label">Commit Hash</span>
+        <ion-note item-end>
+          #{{commitHash}}
+        </ion-note>
+      </button>
+
+      <ion-item-divider class="item-without-title"></ion-item-divider>
+
+      <button ion-item (click)="openSendFeedbackPage()">
+        <ion-icon class="item-img icon-settings" item-start>
+          <img src="assets/img/settings-icons/icon-send-feedback.svg">
+        </ion-icon>
+        <span class="main-label" translate>Send Feedback</span>
+      </button>
+
+      <ion-item-divider class="item-without-title"></ion-item-divider>
+
+      <button ion-item (click)="openSessionLog()">
+        <ion-icon class="item-img icon-settings" name="ios-copy-outline" item-start></ion-icon>
+        <span class="main-label" translate>Session Log</span>
+      </button>
+      -->
+    </ion-list>
+  </div>
+</wide-header-page>

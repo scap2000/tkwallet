@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "715032826928",
+    "project_id": "tkcoin-118bc",
+    "storage_bucket": "tkcoin-118bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715032826928:android:95ebc69546a593908dc9f5",
+        "android_client_info": {
+          "package_name": "org.tkcoin.wallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715032826928-jfl5ggad80solpb7kvai3v9kn0i19c2n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.tkcoin.wallet",
+            "certificate_hash": "fa014c089a5ea44b06492f4a1079e344ed57e6b2"
+          }
+        },
+        {
+          "client_id": "715032826928-qe6251b7kfeqar66g3bsd7ftr7ibj8s6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXRwkCTHpSvpHlvv6TmBlD3h9yuRnJMwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715032826928-qe6251b7kfeqar66g3bsd7ftr7ibj8s6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "715032826928-kol9iodmsj8unub3v2qftvstqns3v97b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.tkcoin.wallet",
+                "app_store_id": "1566347153"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

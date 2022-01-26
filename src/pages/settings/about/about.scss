@@ -1,0 +1,52 @@
+page-about {
+  .item-without-title {
+    margin-top: 0;
+  }
+  .ion-ios-download-outline:before {
+    width: 20px;
+    text-align: center;
+  }
+  .ion-logo-github:before {
+    width: 20px;
+    text-align: center;
+  }
+  .ion-ios-lock-outline:before {
+    width: 20px;
+    text-align: center;
+  }
+  .ion-ios-list-box-outline:before {
+    width: 20px;
+    text-align: center;
+  }
+  .ion-ios-copy-outline:before {
+    width: 20px;
+    text-align: center;
+  }
+
+  .background-button-content {
+    height: 47px;
+    background-color: #edf0fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    border-radius: 21px;
+    margin: 25px auto;
+  }
+
+  .background-content {
+    display: flex;
+    padding: 0px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    align-items: center;
+  }
+
+  .description-container {
+    text-align: justify;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  
+}
