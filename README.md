@@ -11,3 +11,4 @@ Run:
 3) ionic cordova platform add ios (if required)
 4) ionic cordova platform add android (if required)
 5) ./symlinks.sh (Mac/Linux) - TODO .bat for Windows
+6) npm run start
