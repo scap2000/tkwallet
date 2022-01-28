@@ -10,7 +10,7 @@ Run:
 1) npm install
 2) npm run apply:tkcoin
 3) ./symlinks.sh (Mac/Linux) - TODO .bat for Windows
-4) npm run start
+4) npm run start (Opens in browser)
 
 For iOS
 1) ionic cordova platform add ios
