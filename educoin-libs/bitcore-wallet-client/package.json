@@ -1,0 +1,120 @@
+{
+  "_args": [
+    [
+      "bitcore-wallet-client@8.25.7",
+      "/Users/santiago/Documents/BTC/EducoinGenerator/wallet"
+    ]
+  ],
+  "_from": "bitcore-wallet-client@8.25.7",
+  "_id": "bitcore-wallet-client@8.25.7",
+  "_inBundle": false,
+  "_integrity": "sha512-7LnMNmbfyvwb2scPB+TaKKILJ/q6qy9l7CGPWYRTHx6SsaWDNPF5jBsYLlHRGfrUztmLoxzXPsC77XBkXUSaLw==",
+  "_location": "/bitcore-wallet-client",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "bitcore-wallet-client@8.25.7",
+    "name": "bitcore-wallet-client",
+    "escapedName": "bitcore-wallet-client",
+    "rawSpec": "8.25.7",
+    "saveSpec": null,
+    "fetchSpec": "8.25.7"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/bitcore-wallet-client/-/bitcore-wallet-client-8.25.7.tgz",
+  "_spec": "8.25.7",
+  "_where": "/Users/santiago/Documents/BTC/EducoinGenerator/wallet",
+  "author": {
+    "name": "BitPay Inc"
+  },
+  "bugs": {
+    "url": "https://github.com/bitpay/bitcore-wallet-client/issues"
+  },
+  "dependencies": {
+    "ajv": "^6.10.0",
+    "async": "^0.9.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "bip38": "^1.3.0",
+    "bitcore-mnemonic": "^8.25.7",
+    "crypto-wallet-core": "^8.25.7",
+    "json-stable-stringify": "^1.0.1",
+    "lodash": "^4.17.20",
+    "preconditions": "^2.2.3",
+    "sjcl": "1.0.3",
+    "source-map-loader": "^0.2.4",
+    "source-map-support": "^0.5.19",
+    "superagent": "^5.1.0",
+    "typescript": "^3.9.3"
+  },
+  "description": "Client for bitcore-wallet-service",
+  "devDependencies": {
+    "@types/lodash": "^4.14.136",
+    "@types/node": "^10.0.2",
+    "bitcore-wallet-service": "^8.25.7",
+    "browserify": "^13.1.0",
+    "chai": "^1.9.1",
+    "coveralls": "^3.0.2",
+    "istanbul": "*",
+    "kbpgp": "^2.1.4",
+    "mocha": "^5.2.0",
+    "mongodb": "^2.0.27",
+    "prettier": "^2.1.2",
+    "request-promise": "^4.2.4",
+    "sinon": "^7.1.1",
+    "supertest": "*",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.14.0",
+    "typescript-eslint-parser": "^22.0.0",
+    "uuid": "^2.0.1"
+  },
+  "engine": "node >= 8.0.0",
+  "gitHead": "012cc0216a9bc6b195035855bd17149bad41acd1",
+  "homepage": "https://github.com/bitpay/bitcore-wallet-client#readme",
+  "keywords": [
+    "bitcoin",
+    "copay",
+    "multisig",
+    "wallet",
+    "client",
+    "bitcore",
+    "BWS",
+    "BWC"
+  ],
+  "license": "MIT",
+  "main": "ts_build/index.js",
+  "name": "bitcore-wallet-client",
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "none",
+    "arrowParens": "avoid"
+  },
+  "repository": {
+    "url": "git+ssh://git@github.com/bitpay/bitcore-wallet-client.git",
+    "type": "git"
+  },
+  "scripts": {
+    "build": "tsc && npm run lint",
+    "clean": "rm -rf ./ts_build",
+    "compile": "npm run tsc",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha -- --reporter spec test",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "docs": "TODO ./node_modules/.bin/tsdoc src/lib/* src/lib/common src/lib/errors -o docs && cat README.header.md  docs/*.md LICENSE > README.md",
+    "fix": "npm run fix:style && npm run fix:lint",
+    "fix:lint": "tslint --fix -c ../../tslint.json 'src/**/*.ts'",
+    "fix:style": "prettier --write 'src/**/*.ts'",
+    "lint": "npm run lint:ts && npm run lint:style",
+    "lint:style": "prettier --check 'src/**/*.ts'",
+    "lint:ts": "tslint -c ../../tslint.json 'src/**/*.ts'",
+    "precommit": "npm run fix && npm run lint",
+    "pub": "npm run build && npm publish",
+    "start": "npm run clean && npm run tsc && node app.js",
+    "test": "npm run compile && mocha --exit",
+    "test:ci": "npm run test",
+    "tsc": "npm run clean && tsc"
+  },
+  "types": "ts_build/index.d.js",
+  "version": "8.25.7"
+}
